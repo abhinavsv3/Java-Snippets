@@ -39,10 +39,9 @@ class Hamming
 			      l=1;
 				for(int j=0;j<y;j++)
 				{
-					if(((l&i)&((l&i)-1)) == 0){					
+					if(((l&i)&((l&i)-1)) == 0)					
 						c[l]^= c[i];
-						l<<=1;
-					}
+					l<<=1;
 				}
 			}
 			l=1;
